@@ -260,7 +260,11 @@ class TextEditor:
         current_font = font.Font(font=self.text_box['font'])
         self.text_box.configure(font=(current_font.actual()['family'], selected_size))
 
-if __name__ == "__main__":
+def main():
     root = tk.Tk()
     editor = TextEditor(root)
     root.mainloop()
+
+if __name__ == "__main__":
+    main()
+    
