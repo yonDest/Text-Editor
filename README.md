@@ -144,6 +144,7 @@ Feel free to reach out if you'd like to:
 - Report a bug
 - Request a feature
 - Submit a pull request
+- Or, just to chat!
 
 Your contributions are always welcome!
 
