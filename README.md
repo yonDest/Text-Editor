@@ -137,7 +137,7 @@ See the [LICENSE](LICENSE) file for full details.
 **Yoni Desta**
 - GitHub: [@yonDest](https://github.com/yonDest)
 - Email: yonidesta9@gmail.com
-- LinkedIn: [Yoni Desta](https://linkedin.com/in/your-linkedin) <!-- Add your LinkedIn profile if you want -->
+- LinkedIn: [Yoni Desta](https://linkedin.com/in/yonidesta/)
 
 ### Contributing
 Feel free to reach out if you'd like to:
