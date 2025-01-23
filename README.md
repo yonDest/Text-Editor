@@ -147,6 +147,3 @@ Feel free to reach out if you'd like to:
 
 Your contributions are always welcome!
 
-
-
-
