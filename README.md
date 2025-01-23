@@ -146,5 +146,5 @@ Feel free to reach out if you'd like to:
 - Submit a pull request
 - Or, just to chat!
 
-Your contributions are always welcome!
+Your contributions are always welcome
 
