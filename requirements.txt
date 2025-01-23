@@ -1,0 +1,7 @@
+# Core dependencies
+tkinter  # Usually comes with Python, no need to specify version
+
+# Development dependencies (optional)
+pytest>=7.0.0
+black>=22.0.0  # for code formatting
+flake8>=4.0.0  # for linting

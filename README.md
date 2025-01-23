@@ -10,7 +10,6 @@ A simple sticky note text editor built with Python and Tkinter.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Development](#development)
-- [Contributing](#contributing)
 - [License](#license)
 - [Author](#author)
 
@@ -56,7 +55,10 @@ pip install -e .
 
 ## Usage
 
-### Running from command line
+### Running the Application
+
+1. **Command Line**
+
 After installation, you can run the text editor using:
 
 bash
@@ -70,11 +72,23 @@ from notes_app.main import main
 main()
 
 
+### Features Guide
+
+- **Creating a New File**: Click File → New or press `Ctrl + N`
+- **Opening Files**: Click File → Open or press `Ctrl + O`
+- **Saving Files**: Click File → Save or press `Ctrl + S`
+- **Text Formatting**:
+  - Bold: Select text and press `Ctrl + B`
+  - Italic: Select text and press `Ctrl + I`
+  - Change Font: Use the Format → Font menu
+  - Change Color: Use the Format → Color menu
+
 ### Keyboard Shortcuts
 - `Ctrl + N`: New file
 - `Ctrl + O`: Open file
 - `Ctrl + S`: Save file
 - `Ctrl + Shift + S`: Save as
+- `Ctrl + P`: Print
 - `Ctrl + C`: Copy
 - `Ctrl + X`: Cut
 - `Ctrl + V`: Paste
@@ -104,6 +118,34 @@ pip install -e ".[dev]"
 ### Running tests
 bash
 pytest
+
+
+## License
+
+Copyright (c) 2024 Yoni Desta
+
+This project is licensed under the MIT License. This means you can:
+- Use the code commercially
+- Modify the code
+- Distribute the code
+- Use the code privately
+
+See the [LICENSE](LICENSE) file for full details.
+
+## Author
+
+**Yoni Desta**
+- GitHub: [@yonDest](https://github.com/yonDest)
+- Email: yonidesta9@gmail.com
+- LinkedIn: [Yoni Desta](https://linkedin.com/in/your-linkedin) <!-- Add your LinkedIn profile if you want -->
+
+### Contributing
+Feel free to reach out if you'd like to:
+- Report a bug
+- Request a feature
+- Submit a pull request
+
+Your contributions are always welcome!
 
 
 
