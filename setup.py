@@ -1,17 +1,28 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="Notes App",
+    name="notes-app",
     version="0.1.0",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
+    package_data={
+        "notes_app": ["resources/*.png"],
+    },
     install_requires=[
-        # dependencies, e.g.:
-        # "other_library>=1.0.0",
+        "tkinter",
+        "typing-extensions; python_version < '3.8'",
     ],
+    extras_require={
+        "dev": [
+            "pytest>=7.0.0",
+            "black>=22.0.0",
+            "flake8>=4.0.0",
+            "mypy>=0.950",
+        ],
+    },
     entry_points={
         "console_scripts": [
-            "notepad=Notes App.main:main",
+            "notepad=notes_app.main:main",
         ],
     },
     author="Yoni Desta",
@@ -21,4 +32,19 @@ setup(
     long_description_content_type="text/markdown",
     license="MIT",
     url="https://github.com/yonDest/Text-Editor",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: End Users/Desktop",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Topic :: Text Editors",
+    ],
+    python_requires=">=3.6",
 )
+
+
+

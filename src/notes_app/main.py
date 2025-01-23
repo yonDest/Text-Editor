@@ -1,12 +1,26 @@
 import tkinter as tk
 from tkinter import filedialog, font, colorchooser, ttk
 import subprocess
+import os
+import platform
 
 class TextEditor:
     def __init__(self, root):
         self.root = root
         self.root.geometry("700x700")
         self.root.title("Notes")
+        
+        # Add icon setting
+        try:
+            icon_path = os.path.join(os.path.dirname(__file__), "resources", "icon.png")
+            if platform.system() == "Windows":
+                self.root.iconbitmap(icon_path)
+            else:  # Linux/Mac
+                icon = tk.PhotoImage(file=icon_path)
+                self.root.iconphoto(True, icon)
+        except Exception as e:
+            print(f"Could not load icon: {e}")
+        
         self.root.minsize(height=250, width=350)
 
         self.open_status_name = False
@@ -85,6 +99,11 @@ class TextEditor:
         self.color_menu.add_command(label="Selected Text", command=self.text_color)
         self.color_menu.add_command(label="All Text", command=self.all_text_color)
         self.color_menu.add_command(label="Background", command=self.bg_color)
+
+        # Add Sticky Notes Menu
+        self.sticky_menu = tk.Menu(self.text_menu, tearoff=False)
+        self.text_menu.add_cascade(label="Sticky Notes", menu=self.sticky_menu)
+        self.sticky_menu.add_command(label="New Sticky Note", command=self.create_sticky_note)
 
     def setup_bindings(self):
         self.root.bind('<Control-x>', self.cut_text)
@@ -260,6 +279,67 @@ class TextEditor:
         current_font = font.Font(font=self.text_box['font'])
         self.text_box.configure(font=(current_font.actual()['family'], selected_size))
 
+    def create_sticky_note(self):
+        StickyNote()
+
+class StickyNote:
+    def __init__(self):
+        self.window = tk.Toplevel()
+        self.window.title("Sticky Note")
+        self.window.geometry("250x250")
+        self.window.configure(bg="#fff7aa")  # Light yellow background
+        
+        # Remove window decorations except close button
+        self.window.overrideredirect(True)
+        
+        # Add custom title bar
+        self.title_bar = tk.Frame(self.window, bg="#e6de99", relief="raised", bd=1)
+        self.title_bar.pack(expand=0, fill=tk.X)
+        
+        # Add close button
+        self.close_button = tk.Button(self.title_bar, text="×", command=self.window.destroy,
+                                    bg="#e6de99", padx=2, pady=2, bd=0,
+                                    font=("arial", "10", "bold"))
+        self.close_button.pack(side=tk.RIGHT)
+        
+        # Add text widget
+        self.text = tk.Text(self.window, wrap=tk.WORD, bg="#fff7aa",
+                           relief="flat", font=("Arial", 12),
+                           width=20, height=10)
+        self.text.pack(expand=True, fill='both', padx=5, pady=5)
+        
+        # Bind mouse events for window dragging
+        self.title_bar.bind("<Button-1>", self.start_move)
+        self.title_bar.bind("<B1-Motion>", self.on_move)
+        
+        # Add right-click menu
+        self.setup_context_menu()
+        
+    def start_move(self, event):
+        self.x = event.x
+        self.y = event.y
+
+    def on_move(self, event):
+        deltax = event.x - self.x
+        deltay = event.y - self.y
+        x = self.window.winfo_x() + deltax
+        y = self.window.winfo_y() + deltay
+        self.window.geometry(f"+{x}+{y}")
+        
+    def setup_context_menu(self):
+        self.context_menu = tk.Menu(self.window, tearoff=0)
+        self.context_menu.add_command(label="Change Color", command=self.change_color)
+        self.text.bind("<Button-3>", self.show_context_menu)
+        
+    def show_context_menu(self, event):
+        self.context_menu.post(event.x_root, event.y_root)
+        
+    def change_color(self):
+        color = colorchooser.askcolor(title="Choose Sticky Note Color")[1]
+        if color:
+            self.window.configure(bg=color)
+            self.text.configure(bg=color)
+
 def main():
     root = tk.Tk()
     editor = TextEditor(root)
@@ -267,4 +347,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
