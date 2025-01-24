@@ -99,20 +99,22 @@ main()
 
 ### Setting up development environment
 
-1. Clone the repository
-bash
-git clone https://github.com/yonDest/Text-Editor.git
-cd Text-Editor
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yonDest/Text-Editor.git
+    cd Text-Editor
+    ```
 
-2. Create and activate virtual environment
-bash
-python -m venv venv
-source venv/bin/activate # On Windows: venv\Scripts\activate
+2. Create and activate a virtual environment:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
 
-
-3. Install development dependencies
-bash
-pip install -e ".[dev]"
+3. Install development dependencies:
+    ```bash
+    pip install -e ".[dev]"
+    ```
 
 
 ### Running tests
