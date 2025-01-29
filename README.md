@@ -27,8 +27,9 @@ A simple sticky note text editor built with Python and Tkinter.
 
 ## Installation
 
-### From PyPI (Not Yet Available)
-Coming soon! The package will be available on PyPI.
+### From PyPI
+```bash
+pip install notes-app
 
 ### From Source
 1. Clone the repository
@@ -148,14 +149,3 @@ Feel free to reach out if you'd like to:
 
 Your contributions are always welcome!
 ```
-
-Key changes made:
-1. Updated the command from `notepad` to `notes-app`
-2. Added note about PyPI not being available yet
-3. Added pillow as a required dependency
-4. Added "Sticky Notes" to the features list
-5. Fixed code block formatting
-6. Updated installation instructions for clarity
-7. Removed TestPyPI section since it's not currently published there
-
-Would you like me to help you update this in your repository?
