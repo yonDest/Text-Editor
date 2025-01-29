@@ -30,7 +30,7 @@ A simple sticky note text editor built with Python and Tkinter.
 ### From PyPI
 ```bash
 pip install notes-app
-
+```
 ### From Source
 1. Clone the repository
 ```bash
