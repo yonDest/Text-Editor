@@ -10,12 +10,25 @@ class TextEditor:
         self.root.geometry("700x700")
         self.root.title("Notes")
         
-        # Add icon setting
+        # Icon setting
         try:
             icon_path = os.path.join(os.path.dirname(__file__), "resources", "icon.png")
             if platform.system() == "Windows":
                 self.root.iconbitmap(icon_path)
-            else:  # Linux/Mac
+            elif platform.system() == "Darwin":  # macOS
+            # Convert the path to absolute path
+                icon_path = os.path.abspath(icon_path)
+                try:
+                # Try PhotoImage first
+                    icon = tk.PhotoImage(file=icon_path)
+                    self.root.iconphoto(True, icon)
+                except tk.TclError:
+                # If that fails, try alternative method for macOS
+                    from PIL import Image, ImageTk
+                    icon = Image.open(icon_path)
+                    icon = ImageTk.PhotoImage(icon)
+                    self.root.iconphoto(True, icon)
+            else:  # Linux
                 icon = tk.PhotoImage(file=icon_path)
                 self.root.iconphoto(True, icon)
         except Exception as e:

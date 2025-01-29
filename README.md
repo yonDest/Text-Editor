@@ -23,54 +23,53 @@ A simple sticky note text editor built with Python and Tkinter.
 - **Print functionality**: Print documents directly from the editor.
 - **Keyboard shortcuts**: Efficiently perform actions with shortcuts.
 - **Undo/Redo support**: Easily revert or reapply changes.
+- **Sticky Notes**: Create and manage multiple sticky notes.
 
 ## Installation
 
-### Method 1: Using pip
+### From PyPI (Not Yet Available)
+Coming soon! The package will be available on PyPI.
 
-pip install notes-app
-
-
-### Method 2: From source
-
+### From Source
 1. Clone the repository
-bash
+```bash
 git clone https://github.com/yonDest/Text-Editor.git
 cd Text-Editor
+```
 
 2. Create and activate a virtual environment
-bash
-On macOS/Linux
+```bash
+# On macOS/Linux
 python -m venv venv
 source venv/bin/activate
-On Windows
+
+# On Windows
 python -m venv venv
 venv\Scripts\activate
+```
 
-
-3. Install the package
-bash
+3. Install the package and dependencies
+```bash
 pip install -e .
-
+pip install pillow  # Required for icon support
+```
 
 ## Usage
 
 ### Running the Application
 
-1. **Command Line**
-
 After installation, you can run the text editor using:
 
-bash
-notepad
-
+```bash
+notes-app
+```
 
 ### Running from Python
 
-python
+```python
 from notes_app.main import main
 main()
-
+```
 
 ### Features Guide
 
@@ -116,11 +115,10 @@ main()
     pip install -e ".[dev]"
     ```
 
-
 ### Running tests
-bash
+```bash
 pytest
-
+```
 
 ## License
 
@@ -148,5 +146,16 @@ Feel free to reach out if you'd like to:
 - Submit a pull request
 - Or, just to chat!
 
-Your contributions are always welcome
+Your contributions are always welcome!
+```
 
+Key changes made:
+1. Updated the command from `notepad` to `notes-app`
+2. Added note about PyPI not being available yet
+3. Added pillow as a required dependency
+4. Added "Sticky Notes" to the features list
+5. Fixed code block formatting
+6. Updated installation instructions for clarity
+7. Removed TestPyPI section since it's not currently published there
+
+Would you like me to help you update this in your repository?

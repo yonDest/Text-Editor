@@ -9,8 +9,8 @@ setup(
         "notes_app": ["resources/*.png"],
     },
     install_requires=[
-        "tkinter",
         "typing-extensions; python_version < '3.8'",
+        "pillow",
     ],
     extras_require={
         "dev": [
@@ -22,7 +22,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "notepad=notes_app.main:main",
+            "notes-app=notes_app.main:main",  # Changed from notepad to notes-app
         ],
     },
     author="Yoni Desta",
@@ -45,6 +45,3 @@ setup(
     ],
     python_requires=">=3.6",
 )
-
-
-
