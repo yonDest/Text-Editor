@@ -1,5 +1,5 @@
 # Core dependencies
-tkinter  # Usually comes with Python, no need to specify version
+tkinter 
 
 # Development dependencies (optional)
 pytest>=7.0.0
