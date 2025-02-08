@@ -23,7 +23,7 @@ class TextEditor:
                     icon = tk.PhotoImage(file=icon_path)
                     self.root.iconphoto(True, icon)
                 except tk.TclError:
-                # If that fails, try alternative method for macOS
+                # If fails try alternative method for macOS
                     from PIL import Image, ImageTk
                     icon = Image.open(icon_path)
                     icon = ImageTk.PhotoImage(icon)
