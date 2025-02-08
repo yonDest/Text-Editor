@@ -22,7 +22,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "notes-app=notes_app.main:main",  # Changed from notepad to notes-app
+            "notes-app=notes_app.main:main",  
         ],
     },
     author="Yoni Desta",
