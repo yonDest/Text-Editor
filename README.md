@@ -24,6 +24,18 @@ A simple sticky note text editor built with Python and Tkinter.
 - **Keyboard shortcuts**: Efficiently perform actions with shortcuts.
 - **Undo/Redo support**: Easily revert or reapply changes.
 - **Sticky Notes**: Create and manage multiple sticky notes.
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+  <img src="src/resources/Screen Shot 2024-07-19 at 10.19.20 PM" alt="Photo 1" style="width: 22%; margin: 10px;">
+  <img src="src/resources/Screen Shot 2024-07-19 at 10.19.49 PM" alt="Photo 2" style="width: 22%; margin: 10px;">
+  <img src="src/resources/Screen Shot 2024-07-19 at 10.20.06 PM" alt="Photo 3" style="width: 22%; margin: 10px;">
+  <img src="src/resources/Screen Shot 2024-07-19 at 10.20.41 PM" alt="Photo 4" style="width: 22%; margin: 10px;">
+  <img src="src/resources/Screen Shot 2024-07-19 at 10.20.44 PM" alt="Photo 5" style="width: 22%; margin: 10px;">
+  <img src="src/resources/Screen Shot 2024-07-19 at 10.21.11 PM" alt="Photo 6" style="width: 22%; margin: 10px;">
+  <img src="src/resources/Screen Shot 2024-07-19 at 10.21.33 PM" alt="Photo 7" style="width: 22%; margin: 10px;">
+  <img src="src/resources/Screen Shot 2024-07-19 at 10.21.42 PM" alt="Photo 8" style="width: 22%; margin: 10px;">
+</div>
+
+
 
 ## Installation
 
