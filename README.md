@@ -25,14 +25,14 @@ A simple sticky note text editor built with Python and Tkinter.
 - **Undo/Redo support**: Easily revert or reapply changes.
 - **Sticky Notes**: Create and manage multiple sticky notes.
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
-  <img src="src/notes_app/resources/Screen Shot 2024-07-19 at 10.19.20 PM.png" alt="Photo 1" style="width: 22%; margin: 10px;">
-  <img src="src/notes_app/resources/Screen Shot 2024-07-19 at 10.19.49 PM.png" alt="Photo 2" style="width: 22%; margin: 10px;">
-  <img src="src/resources/Screen Shot 2024-07-19 at 10.20.06 PM" alt="Photo 3" style="width: 22%; margin: 10px;">
-  <img src="src/resources/Screen Shot 2024-07-19 at 10.20.41 PM" alt="Photo 4" style="width: 22%; margin: 10px;">
-  <img src="src/resources/Screen Shot 2024-07-19 at 10.20.44 PM" alt="Photo 5" style="width: 22%; margin: 10px;">
-  <img src="src/resources/Screen Shot 2024-07-19 at 10.21.11 PM" alt="Photo 6" style="width: 22%; margin: 10px;">
-  <img src="src/resources/Screen Shot 2024-07-19 at 10.21.33 PM" alt="Photo 7" style="width: 22%; margin: 10px;">
-  <img src="src/resources/Screen Shot 2024-07-19 at 10.21.42 PM" alt="Photo 8" style="width: 22%; margin: 10px;">
+  <img src="src/notes_app/resources/photo1.png" alt="Example Photo 1" style="width: 22%; margin: 10px;">
+  <img src="src/notes_app/resources/photo2.png" alt="Example Photo 2" style="width: 22%; margin: 10px;">
+  <img src="src/notes_app/resources/photo3.png" alt="Example Photo 3" style="width: 22%; margin: 10px;">
+  <img src="src/notes_app/resources/photo4.png" alt="Example Photo 4" style="width: 22%; margin: 10px;">
+  <img src="src/notes_app/resources/photo5.png" alt="Example Photo 5" style="width: 22%; margin: 10px;">
+  <img src="src/notes_app/resources/photo6.png" alt="Example Photo 6" style="width: 22%; margin: 10px;">
+  <img src="src/notes_app/resources/photo7.png" alt="Example Photo 7" style="width: 22%; margin: 10px;">
+  <img src="src/notes_app/resources/photo8.png" alt="Example Photo 8" style="width: 22%; margin: 10px;">
 </div>
 
 
